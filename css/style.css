@@ -102,6 +102,7 @@ code {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*--Input styles*/
 .inputgroup {
     display: inline-block;
     padding: 8px;
@@ -177,6 +178,80 @@ progress {
     height: 8px;
     color: #4b0000;
 }
+
+/*--Tooltip styles*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #0c0c1e;
+    padding: 4px 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #aba7ad;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px 8px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*--TOP right botton left tooltip style*/
+.tooltip.top .tooltiptext {
+    bottom: 110%;
+    left: calc(50% - 60px);
+}
+.tooltip.top .tooltiptext::after {
+    top: 100%;
+    left: calc(50% - 5px);
+    border-color: #aba7ad transparent transparent transparent;
+}
+/*--top RIGHT botton left tooltip style*/
+.tooltip.right .tooltiptext {
+    bottom: 0;
+    left: 105%;
+}
+.tooltip.right .tooltiptext::after {
+    top: calc(50% - 5px);
+    right: 100%;
+    border-color: transparent #aba7ad transparent transparent;
+}
+/*--top right BOTTOM left tooltip style*/
+.tooltip.bottom .tooltiptext {
+    top: 110%;
+    left: calc(50% - 60px);
+}
+.tooltip.bottom .tooltiptext::after {
+    bottom: 100%;
+    left: calc(50% - 5px);
+    border-color: transparent transparent #aba7ad transparent;
+}
+/*--top right botton LEFT tooltip style*/
+.tooltip.left .tooltiptext {
+    top: 0;
+    right: 110%;
+}
+.tooltip.left .tooltiptext::after {
+    top: calc(50% - 5px);
+    left: 100%;
+    border-color: transparent transparent transparent #aba7ad;
+}
+
 
 /* ---> UTILIDADES */
 
