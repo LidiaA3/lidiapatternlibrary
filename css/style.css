@@ -63,10 +63,10 @@ button,
 .btn {
     display: inline-block;
     padding: 0 16px;
-    background-color: #f3e3e2;
+    background-color: #faf5f4;
     text-decoration: none;
     color: #4b0000;
-    border: 1px solid #4b0000;
+    border: none;
     line-height: 2;
     text-transform: lowercase;
     font-family: 'Lato', sans-serif;
@@ -79,13 +79,13 @@ button,
 
 button:hover,
 .btn:hover {
-    background-color: #faf5f4;
+    background-color: #f3e3e2;
 }
 
 .btn--secondary {
     background-color: white;
     color: #aba7ad;
-    border-color: #aba7ad;
+    border: 1px solid #aba7ad;
 }
 
 .btn--secondary:hover {
@@ -101,6 +101,83 @@ code {
     font-size: 0.8em;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.inputgroup {
+    display: inline-block;
+    padding: 8px;
+}
+
+input,
+textarea,
+select {
+    background-color: #faf5f4;
+    color: #4b0000;
+    padding: 2px 8px;
+    border: 1px solid #4b0000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #4b0000;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #4b0000;
+  background-color: none;
+  border-radius: 50%;
+}
+
+[type="radio"]:checked,
+[type="checkbox"]:checked {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    background-color: #4b0000;
+    box-shadow: 0 0 0 3px white, 0 0 0 4px #4b0000;
+}
+
+[type="range"] {
+    appearance: none;
+    width: 160px;
+    height: 8px;
+    background-color: #faf5f4;
+    border: none;
+    overflow: hidden;
+}
+
+[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background-color: #4b0000;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #4b0000, -160px 0 0 160px #4b0000;
+}
+
+[type="range"]:focus {
+    border: none;
+}
+
+[type="checkbox"] {
+  border-radius: 25%;
+}
+
+progress {
+    appearance: none;
+    width: 250px;
+    height: 8px;
+    color: #4b0000;
+}
+
 /* ---> UTILIDADES */
 
 /* Colors */
@@ -187,6 +264,7 @@ code {
     display: inline-block;
     width: 160px;
     height: 100px;
+    border-radius: 12px;
     position: relative;
 }
 
@@ -196,6 +274,8 @@ code {
     display: block;
     color: white;
     text-align: center;
+    border-radius: 12px 12px 0 0;
+    padding: 4px 0;
 }
 
 .pattern-tittle {
