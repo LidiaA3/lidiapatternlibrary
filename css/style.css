@@ -270,25 +270,18 @@ progress {
     background-color: #f3e3e2;
 }
 
-.color-navy {
-    color: #1b2e3c;
+.color-crimson-dark {
+    color: #140000;
 }
-.bg-color-navy {
-    background-color: #1b2e3c;
-}
-
-.color-cadet {
-    color: #a3b5c2;
-}
-.bg-color-cadet {
-    background-color: #a3b5c2;
+.bg-color-crimson-dark {
+    background-color: #140000;
 }
 
-.color-accent {
-    color: #b0a06a;
+.color-crimson-light {
+    color: #613737;
 }
-.bg-color-accent {
-    background-color: #b0a06a;
+.bg-color-crimson-light {
+    background-color: #613737;
 }
 
 .color-dark {
@@ -303,6 +296,13 @@ progress {
 }
 .bg-color-dark-grey {
     background-color: #5b5a65;
+}
+
+.color-medium-grey {
+    color: #aea3a3;
+}
+.bg-color-medium-grey {
+    background-color: #aea3a3;
 }
 
 .color-light-grey {
